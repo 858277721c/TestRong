@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i(TAG, this + "onCreate savedInstanceState:" + savedInstanceState);
+        Log.i(TAG, this + " onCreate savedInstanceState:" + savedInstanceState);
 
         if (savedInstanceState != null)
         {
@@ -53,5 +53,12 @@ public class MainActivity extends AppCompatActivity
                 Log.i(TAG, "connect onError: " + errorCode);
             }
         });
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        Log.i(TAG, this + " onDestroy");
     }
 }
