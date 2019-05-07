@@ -9,7 +9,7 @@ import io.rong.imlib.RongIMClient;
 public class MainActivity extends AppCompatActivity
 {
     public static final String TAG = MainActivity.class.getSimpleName();
-    public static final String TOKEN = "LOHrQV6XMvO3G4Jxrraokq0NILXdP6D2szGAx3pIbvB4z80anU7DxmjPYouVZsmzI3K7988FFN7Bco9PPlV4YA==";
+    public static final String TOKEN = "XLHwGmxISpuqZFe7y9DeCTxAy4ek0qIgHEzWb/0gOmgf4Ar9mQx9Rk/Q1RE7XW929sta6QUB28o=";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
