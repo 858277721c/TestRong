@@ -17,18 +17,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.i(TAG, this + " onCreate savedInstanceState:" + savedInstanceState);
-
-        if (savedInstanceState != null)
-        {
-            if (RongIMClient.getInstance().getCurrentConnectionStatus() != RongIMClient.ConnectionStatusListener.ConnectionStatus.CONNECTED)
-            {
-                connect();
-            }
-        } else
-        {
-            connect();
-        }
+        Log.i(TAG, this + " onCreate");
+        connect();
     }
 
     private void connect()
